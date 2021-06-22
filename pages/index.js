@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -7,15 +8,15 @@ export default function Home() {
       <Head>
         <title>Reading view</title>
       </Head>
-      <main >
+      <main>
         <div className={styles.pageView}>
           <div className={styles.LeftSideBar}>
             <p>Chapter 11: </p>
-            <h1>Rework</h1>
-            <h5>Next : Scratch Your Own Itch</h5>
+            <h1>Progress</h1>
+            <Link href='#' className={styles.nextPagelink}>Next : Ignore the details early on</Link>
           </div>
           <div className={styles.mainContent}>
-            <h2>Start At The Epicenter</h2>
+            <h2 >Start At The Epicenter</h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
               ipsam rem debitis dolor officiis error? Quae, dicta nesciunt. Qui
@@ -29,6 +30,8 @@ export default function Home() {
               molestiae autem assumenda. Minima porro natus deserunt unde nam
               quod consequatur obcaecati quis delectus suscipit! Fuga, sapiente
               minus ut in aliquid fugiat aliquam dolor dolorem temporibus natus.
+            </p>
+            <p>
               Numquam sunt, minus quo corrupti repudiandae laboriosam dolorem
               natus labore fugit facilis. Et exercitationem expedita error
               perspiciatis molestiae? Non ratione possimus quasi. Nesciunt ad
@@ -45,15 +48,18 @@ export default function Home() {
               itaque in et voluptatum, ipsa ratione quas tempora esse ex quos
               pariatur voluptates soluta qui amet perferendis optio illum neque,
               culpa expedita sit quidem laudantium! Laudantium unde nostrum
-              esse. Ut, similique facere! Distinctio aspernatur officiis
-              deleniti unde nesciunt inventore ut voluptate modi! Saepe quaerat
-              aliquam quasi adipisci esse quis nemo a. Illum doloremque beatae
-              hic aperiam soluta eum asperiores. Repellat corrupti id excepturi
-              saepe. Nobis magni quisquam doloremque ducimus corrupti commodi
-              ipsa tempora quasi vitae blanditiis non, amet asperiores nostrum
-              eveniet, quae labore accusantium? Voluptate aliquid expedita
-              libero itaque!{" "}
+              esse.{" "}
             </p>
+            <p>
+              Ut, similique facere! Distinctio aspernatur officiis deleniti unde
+              nesciunt inventore ut voluptate modi! Saepe quaerat aliquam quasi
+              adipisci esse quis nemo a. Illum doloremque beatae hic aperiam
+              soluta eum asperiores. Repellat corrupti id excepturi saepe. Nobis
+              magni quisquam doloremque ducimus corrupti commodi ipsa tempora
+              quasi vitae blanditiis non, amet asperiores nostrum eveniet, quae
+              labore accusantium? Voluptate aliquid expedita
+            </p>
+            <Link href='#' className={styles.nextPagelink}>Next : Ignore the details early on</Link>
           </div>
         </div>
       </main>
